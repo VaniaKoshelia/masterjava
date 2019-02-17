@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4 th:text="${exception.message}">Message</h4>
+<ul>
+    <li th:each="item:${exception.stackTrace}" th:text="${item}"></li>
+</ul>
+</body>
+</html>

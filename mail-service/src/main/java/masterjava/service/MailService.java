@@ -1,4 +1,4 @@
-package ru.javaops.masterjava.service;
+package masterjava.service;
 
 import java.util.ArrayList;
 import java.util.List;
