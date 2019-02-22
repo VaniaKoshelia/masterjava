@@ -19,18 +19,57 @@
             </plugin>
         </plugins>
     </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.jdbi</groupId>
+            <artifactId>jdbi</artifactId>
+            <version>2.78</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jdbi</groupId>
+            <artifactId>jdbi</artifactId>
+            <version>2.78</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.bertoncelj.jdbi.entitymapper</groupId>
+            <artifactId>jdbi-entity-mapper</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.3-jre</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
-    <name>Master Java</name>
+    <name>Masterjava Root</name>
     <url>https://github.com/JavaOPs/masterjava</url>
 
     <modules>
-        <module>upload</module>
+        <module>parent</module>
+        <module>parent-web</module>
+
         <module>common</module>
-<!--
-        <module>webapp</module>
-        <module>mail-service</module>
-        <module>mail-api</module>
+        <module>persist</module>
         <module>test</module>
--->
+
+        <module>web</module>
+        <module>services</module>
     </modules>
 </project>
