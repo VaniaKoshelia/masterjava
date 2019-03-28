@@ -12,4 +12,5 @@
         <module>mail-api</module>
         <module>mail-service</module>
     </modules>
+
 </project>
