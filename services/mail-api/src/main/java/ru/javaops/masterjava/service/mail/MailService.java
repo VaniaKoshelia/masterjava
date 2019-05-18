@@ -10,12 +10,18 @@ import java.util.Set;
 //        style = SOAPBinding.Style.DOCUMENT,
 //        use= SOAPBinding.Use.LITERAL,
 //        parameterStyle = SOAPBinding.ParameterStyle.WRAPPED)
-public interface MailService {
+public interface  MailService {
 
     @WebMethod
     String sendToGroup(
             @WebParam(name = "to") Set<Addressee> to,
             @WebParam(name = "cc") Set<Addressee> cc,
+            @WebParam(name = "subject") String subject,
+            @WebParam(name = "body") String body);
+
+    @WebMethod
+    GroupResult sendBulk(
+            @WebParam(name = "to") Set<Addressee> to,
             @WebParam(name = "subject") String subject,
             @WebParam(name = "body") String body);
 }
